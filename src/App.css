@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  transition:0.2s ease;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap:2em;
+  flex-wrap: wrap;
+  padding:50px 5%;
+}
+.profileCard{
+  position: relative;
+  width:26%;
+  height:auto;
+  padding:20px 10px;
+  background-color: azure;
+  cursor:pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profileCard:hover{
+  transform: scale(1.09);
+}
+.profileCard .image{
+  width:90px;
+  cursor: pointer;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px #333;
+}
+span{
+  position:absolute;
+  top:20px;
+  right:30px;
+  cursor: pointer;
+  padding:5px;
+  border-radius: 9px;
+  color:#fff;
+  text-decoration: underline;
+}
+span.online{
+ color: green;
+}
+span.offline{
+  color: red;
+}
+.profileCard h1{
+  font-size: 1.5em;
+  margin:1em auto 1px;
+}
+.profileCard p{
+  position: absolute;
+  top:50px;
+  left:10px;
+  font-size: 5em;
+  color:rgb(177, 173, 173)
+}
+.profileCard h3{
+  font-weight: 400;
+  margin:1px auto 5px;
+}
+.profileCard h5{
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  padding:12px;
+  margin:5px auto;
+  border:1px solid #b8b3b3;
+  border-left: none;
+  line-height: 1.7em;
+  border-right: none;
+}
+.socialMedia{
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.8em;
+}
+.socialMedia img{
+  width: 40px;
+  cursor:pointer;
+  height: 40px
+}
